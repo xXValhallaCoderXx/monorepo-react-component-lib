@@ -1,11 +1,5 @@
 {
-  "packages": [
-    "ui-valhalla/*",
-    "ui-atoms/*",
-    "ui-molecules/*",
-    "ui-organisms/*",
-    "core/*"
-  ],
+  "packages": ["packages/*"],
 
   "version": "independent",
   "hoist": true,
