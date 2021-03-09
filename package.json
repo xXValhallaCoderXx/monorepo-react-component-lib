@@ -1,0 +1,11 @@
+{
+  "name": "monorepo-react-component-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:xXValhallaCoderXx/monorepo-react-component-lib.git",
+  "author": "Renate Gouveia <renate.gouveia@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
