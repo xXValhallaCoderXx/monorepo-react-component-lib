@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib/issues"
   },
-  "homepage": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib#readme"
+  "homepage": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib#readme",
+  "peerDependencies": {
+    "react": "16.x"
+  }
 }
