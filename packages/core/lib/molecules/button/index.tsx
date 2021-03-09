@@ -1,7 +1,10 @@
 import React from "react";
-export interface IProps {
+
+export interface IButtonProps {
   label: string;
 }
 
-export const Button: React.FC<IProps> = ({ label }) => <button>{label}</button>;
+export const Button: React.FC<IButtonProps> = ({ label }) => (
+  <button className="btn-demo">{label}</button>
+);
 export default Button;

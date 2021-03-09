@@ -6,7 +6,7 @@
   "author": "Renate Gouveia <renate.gouveia@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "storybook": "npx lerna run storybook",
+    "storybook": "cd packages/storybook && npm run storybook",
     "build:storybook": "npx lerna run build-storybook",
     "build:ui-library": "npx lerna run pre-build && npx lerna run build:ui-components && npx lerna run build:types"
   },
