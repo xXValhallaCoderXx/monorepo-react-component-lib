@@ -32,5 +32,8 @@
   "homepage": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib#readme",
   "peerDependencies": {
     "react": "16.x"
+  },
+  "dependencies": {
+    "react-bootstrap": "^1.5.1"
   }
 }

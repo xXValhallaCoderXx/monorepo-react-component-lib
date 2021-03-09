@@ -6,12 +6,14 @@ import { babel } from "@rollup/plugin-babel";
 import analyze from "rollup-plugin-analyzer";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
+const cjs = require("rollup-plugin-commonjs");
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 const workingDir = "../../core";
 
 export default {
   input: path.resolve(__dirname, `${workingDir}/lib/index.ts`),
-  external: ["react"],
+  external: ["react", "classnames"],
   output: [
     {
       file: path.resolve(__dirname, `${workingDir}/dist/index.cjs.js`),
@@ -25,6 +27,9 @@ export default {
     },
   ],
   plugins: [
+    nodeResolve({
+      moduleDirectories: [path.resolve(__dirname, "../../../node_modules/")],
+    }),
     analyze(),
     resolve(),
     babel({
@@ -42,6 +47,12 @@ export default {
       extract: true,
       extract: path.resolve(__dirname, `${workingDir}/dist/index.css`),
       plugins: [],
+    }),
+    cjs({
+      // include: [path.resolve(__dirname, "../../../node_modules/**")],
+      namedExports: {
+        "node_modules/classnames/**": ["classNames"],
+      },
     }),
   ],
 };

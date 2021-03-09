@@ -1,6 +1,6 @@
 import "../../styles/index.scss";
-//@ts-ignore
-import styles from "./index.module.scss";
+import BootstrapButton from "react-bootstrap/Button";
+
 import React from "react";
 
 export interface IButtonProps {
@@ -8,6 +8,6 @@ export interface IButtonProps {
 }
 
 export const Button: React.FC<IButtonProps> = ({ label }) => (
-  <button className={`btn-demo ${styles.testClass}`}>{label}</button>
+  <BootstrapButton>{label}</BootstrapButton>
 );
 export default Button;
