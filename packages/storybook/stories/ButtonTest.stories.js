@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "../../valhalla-ui/lib/molecules/button";
+import { Button } from "@valhalla-ui/valhalla-ui/lib/molecules/button";
 
 export default {
   title: "Example2/Button",

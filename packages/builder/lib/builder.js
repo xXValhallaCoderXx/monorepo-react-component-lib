@@ -35,6 +35,8 @@
 const path = require("path");
 import resolve from "@rollup/plugin-node-resolve";
 import { babel } from "@rollup/plugin-babel";
+import analyze from "rollup-plugin-analyzer";
+import del from "rollup-plugin-delete";
 
 const workingDir = "../../valhalla-ui";
 
@@ -54,10 +56,15 @@ export default {
     },
   ],
   plugins: [
+    analyze(),
     resolve(),
     babel({
       babelHelpers: "bundled",
       configFile: path.resolve(__dirname, "./.babelrc.js"),
+    }),
+    del({
+      force: true,
+      targets: path.resolve(__dirname, `${workingDir}/dist/`),
     }),
   ],
 };

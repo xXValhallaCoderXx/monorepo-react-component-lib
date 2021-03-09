@@ -36,9 +36,9 @@
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
     "@storybook/react": "^6.1.21",
+    "@valhalla-ui/valhalla-ui": "^1.0.0",
     "babel-loader": "^8.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  },
-  "dependencies": {}
+  }
 }
