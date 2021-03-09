@@ -22,10 +22,23 @@
     "url": "git+https://github.com/xXValhallaCoderXx/monorepo-react-component-lib.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "bugs": {
     "url": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib/issues"
   },
-  "homepage": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib#readme"
+  "homepage": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/react": "^6.1.21",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {}
 }

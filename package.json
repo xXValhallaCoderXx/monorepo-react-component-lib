@@ -5,6 +5,10 @@
   "repository": "git@github.com:xXValhallaCoderXx/monorepo-react-component-lib.git",
   "author": "Renate Gouveia <renate.gouveia@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "storybook": "npx lerna run storybook",
+    "build:storybook": "npx lerna run build-storybook"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }
