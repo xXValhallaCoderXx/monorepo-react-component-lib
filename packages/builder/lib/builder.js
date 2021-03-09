@@ -7,7 +7,7 @@ import analyze from "rollup-plugin-analyzer";
 import del from "rollup-plugin-delete";
 import typescript from "rollup-plugin-typescript2";
 
-const workingDir = "../../valhalla-ui";
+const workingDir = "../../core";
 
 export default {
   input: path.resolve(__dirname, `${workingDir}/lib/index.ts`),
