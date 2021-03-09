@@ -23,7 +23,8 @@
   },
   "scripts": {
     "build:types": "npx tsc",
-    "build:ui-components": "rollup -c ./lib/builder.js"
+    "build:ui-components": "rollup -c ./lib/builder.js",
+    "pre-build": "rimraf ../valhalla-ui/dist"
   },
   "bugs": {
     "url": "https://github.com/xXValhallaCoderXx/monorepo-react-component-lib/issues"
@@ -36,6 +37,7 @@
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "babel-loader": "^8.2.2",
+    "rimraf": "^3.0.2",
     "rollup": "^2.41.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-delete": "^2.0.0",

@@ -6,7 +6,6 @@
   "author": "Renate Gouveia <renate.gouveia@gmail.com>",
   "license": "ISC",
   "main": "lib/index.js",
-  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

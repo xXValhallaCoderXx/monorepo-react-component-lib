@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "storybook": "npx lerna run storybook",
-    "build:storybook": "npx lerna run build-storybook"
+    "build:storybook": "npx lerna run build-storybook",
+    "build:ui-library": "npx lerna run pre-build && npx lerna run build:ui-components && npx lerna run build:types"
   },
   "devDependencies": {
     "lerna": "^4.0.0"

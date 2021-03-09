@@ -39,7 +39,7 @@ export default {
     }),
     del({
       force: true,
-      targets: path.resolve(__dirname, `${workingDir}/dist/`),
+      targets: path.resolve(__dirname, `${workingDir}/dist/*`),
     }),
   ],
 };
