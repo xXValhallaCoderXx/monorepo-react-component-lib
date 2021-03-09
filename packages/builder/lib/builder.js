@@ -4,8 +4,8 @@ const path = require("path");
 import resolve from "@rollup/plugin-node-resolve";
 import { babel } from "@rollup/plugin-babel";
 import analyze from "rollup-plugin-analyzer";
-import del from "rollup-plugin-delete";
 import typescript from "rollup-plugin-typescript2";
+import postcss from "rollup-plugin-postcss";
 
 const workingDir = "../../core";
 
@@ -37,9 +37,11 @@ export default {
         include: [path.resolve(__dirname, `${workingDir}/lib/*`)],
       },
     }),
-    del({
-      force: true,
-      targets: path.resolve(__dirname, `${workingDir}/dist/*`),
+    postcss({
+      minimize: true,
+      extract: true,
+      extract: path.resolve(__dirname, `${workingDir}/dist/index.css`),
+      plugins: [],
     }),
   ],
 };
