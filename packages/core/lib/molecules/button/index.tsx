@@ -21,6 +21,7 @@ const mapVariants = (variant) => {
 
 export const Button: React.FC<IButtonProps> = ({ label, size, variant }) => (
   <BootstrapButton variant={mapVariants(variant)} size={size}>
+    yo
     {label.toUpperCase()}
   </BootstrapButton>
 );
