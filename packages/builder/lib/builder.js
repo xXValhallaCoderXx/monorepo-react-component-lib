@@ -8,7 +8,7 @@ import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 const cjs = require("rollup-plugin-commonjs");
 import { nodeResolve } from "@rollup/plugin-node-resolve";
-import purgecss from "rollup-plugin-purgecss";
+// import purgecss from "rollup-plugin-purgecss";
 import { uglify } from "rollup-plugin-uglify";
 
 const workingDir = "../../core";
@@ -32,12 +32,14 @@ export default {
     nodeResolve({
       moduleDirectories: [path.resolve(__dirname, "../../../node_modules/")],
     }),
-    analyze(),
-    resolve(),
-    purgecss({
-      content: [path.resolve(__dirname, `${workingDir}/lib/index.ts`)],
-      css: [path.resolve(__dirname, `${workingDir}/lib/styles/index.scss`)],
+    analyze({
+      summaryOnly: true,
     }),
+    resolve(),
+    // purgecss({
+    //   content: ["**/*.tsx", "**/*.ts"],
+    //   css: ["**/*.scss"],
+    // }),
     babel({
       babelHelpers: "bundled",
       configFile: path.resolve(__dirname, "./.babelrc.js"),

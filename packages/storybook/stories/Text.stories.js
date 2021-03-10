@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text } from "@valhalla-ui/core/lib/atoms/typography";
+import { Text } from "@valhalla-ui/core/lib/atoms/text";
 
 export default {
   title: "Example2/Text",

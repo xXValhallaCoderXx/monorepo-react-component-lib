@@ -5,15 +5,12 @@ import { Button } from "@valhalla-ui/core/lib/molecules/button";
 export default {
   title: "Example2/Button",
   component: Button,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 };
 
 const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
+  variant: "secondary",
   label: "Button",
 };
