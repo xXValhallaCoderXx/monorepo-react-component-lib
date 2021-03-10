@@ -4,7 +4,7 @@ import BSCard from "react-bootstrap/Card";
 export const Card: React.FC = ({ children }) => {
   return (
     <BSCard>
-      <BSCard.Body>{children}</BSCard.Body>
+      <BSCard.Body>ssds{children}</BSCard.Body>
     </BSCard>
   );
 };
