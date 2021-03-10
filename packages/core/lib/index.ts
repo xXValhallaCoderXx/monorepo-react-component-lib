@@ -1,3 +1,4 @@
+import "./styles/index.scss";
 export { default as Card } from "./atoms/card";
 export * from "./atoms/card";
 
