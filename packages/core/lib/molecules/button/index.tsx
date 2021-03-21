@@ -1,33 +1,9 @@
-import BootstrapButton from "react-bootstrap/Button";
-
 import React from "react";
 
-export interface IButtonProps {
-  label: string;
-  size?: "sm" | "lg" | null;
-  variant?: "primary" | "secondary" | "whire-primary";
-}
-
-const mapVariants = (variant) => {
-  switch (variant) {
-    case "primary":
-      return "primary";
-    case "secondary":
-      return "outline-primary";
-    default:
-      return "primary";
-  }
-};
-
-export const Button: React.FC<IButtonProps> = ({ label, size, variant }) => (
-  <BootstrapButton variant={mapVariants(variant)} size={size}>
-    yo
-    {label.toUpperCase()}
-  </BootstrapButton>
+export const Button: React.FC = ({ children }) => (
+  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    HELO
+  </button>
 );
 
-Button.defaultProps = {
-  variant: "primary",
-  size: null,
-};
 export default Button;
