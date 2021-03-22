@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build:types": "npx tsc",
-    "build:ui-components": "rollup -c ./lib/builder.js",
+    "build:ui-components": "NODE_ENV=production rollup -c ./lib/builder.js",
     "pre-build": "rimraf ../core/dist"
   },
   "bugs": {

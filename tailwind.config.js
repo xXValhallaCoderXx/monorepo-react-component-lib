@@ -1,4 +1,4 @@
 module.exports = {
-  purge: ["./packages/core/**/*.{js,jsx,ts,tsx}"],
+  purge: ["./packages/core/lib/**/*.{js,jsx,ts,tsx}"],
   theme: {},
 };

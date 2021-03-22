@@ -38,7 +38,7 @@ export default {
     resolve(),
     // purgecss({
     //   content: ["**/*.tsx", "**/*.ts"],
-    //   css: ["**/*.scss"],
+    //   css: ["**/*.scss", "**/*.css"],
     // }),
     babel({
       babelHelpers: "bundled",
@@ -51,10 +51,13 @@ export default {
       },
     }),
     postcss({
+      config: {
+        path: path.resolve(__dirname, "../../../postcss.config.js"),
+      },
       minimize: true,
       extract: true,
       extract: path.resolve(__dirname, `${workingDir}/dist/index.css`),
-      plugins: [],
+      // plugins: [],
     }),
     cjs({
       // include: [path.resolve(__dirname, "../../../node_modules/**")],
